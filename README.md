@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+/usr/local/bin/npm
+which npm
+node --max_old_space_size=300 /usr/local/bin/npm run build
