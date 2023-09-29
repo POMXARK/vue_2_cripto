@@ -41,7 +41,7 @@ const store = new Vuex.Store({
   },
   actions: {
     async fetchPosts(context, {set_start_date, set_end_date} = {}) {
-      const { data } = await axios.get(`http://127.0.0.1:8000/api/ethereum/?date_start=${set_start_date ?? '2017-08-20'}&date_end=${set_end_date ?? '2017-08-20'}`);
+      const { data } = await axios.get(`https://backend-api-crypto.onrender.com/api/ethereum/?date_start=${set_start_date ?? '2017-08-20'}&date_end=${set_end_date ?? '2017-08-20'}`);
       console.log(" data.data")
       context.commit("updatePosts", data.data);
     }
